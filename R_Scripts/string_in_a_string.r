@@ -13,7 +13,7 @@ target_string <- "EAST"
 position <- "middle"
 
 # Define a function that looks for words that meet the following criteria:
-  # if you add your substring at the defined position to a string, you can that new string somewhere else in the list
+  # if you add your substring at the defined position to a string, you can find that new string somewhere else in the list
 
 find_valid_words <- function(words, target_string, position) {
   results <- data.frame(
