@@ -1,4 +1,4 @@
-# Load the readxl package
+# Libraries
 library(readxl)
 library(tidyverse)
 library(dplyr)
