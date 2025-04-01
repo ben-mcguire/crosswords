@@ -7,7 +7,6 @@ library(progress)
 # Data import
 words <- read.csv("~/Desktop/xwordlist.csv", sep="")
 words$word <- tolower(trimws(words$word))
-words <- unique(words$word)
 
 # Caesar cipher
 caesar_cipher <- function(word, shift) {
@@ -34,7 +33,7 @@ results <- data.frame(old_word = character(),
                       stringsAsFactors = FALSE)
 seen <- new.env(hash = TRUE)
 
-# Progress bar
+# It was taking an insanely long time locally so I added a progress bar
 pb <- progress_bar$new(
   format = "Processing [:bar] :percent ETA: :eta",
   total = length(word_set), clear = FALSE, width = 60
@@ -65,5 +64,3 @@ for (word in word_set) {
     }
   }
 }
-
-View(results)
