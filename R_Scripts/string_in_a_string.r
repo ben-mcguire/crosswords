@@ -1,5 +1,5 @@
 
-word_list <- read.csv("~/Desktop/xwordlist.csv", sep="")
+word_list <- read.csv("your_words.csv", sep="")
 
 library(tidyverse)
 library(dplyr)
