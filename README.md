@@ -12,7 +12,7 @@ If you do crosswords a lot, you can start to get a feel for how themes are const
 ### Find Inner Substring in A String
 One of the simplest themes that might benefit from some coding scale is finding a word or phrase hidden inside another word or phrase. The best versions of these are usually the unexpected ones - when the end of one word plus the start of the next word in a phrase creates an unexpected and unrelated word. 
 
-As a silly example, a puzzle themed on REVERSE MOTION might benefit from finding the word GALLOP spelled backwards in POLL AGGREGATOR - but finding those can be a slow process. This is a very simple R script that finds all of the internal matches fast and returns a list you can scan to find the gems. 
+As a silly example, a puzzle themed on REVERSE MOTION might benefit from finding the word JOG spelled backwards in MANGO JUICE - but finding those can be a slow process. This is a very simple R script that finds all of the internal matches fast and returns a list you can scan to find the gems. 
 
 ### Adding / Subtracting a Substring in A String
 A widely-used theme family is taking a substring and adding it to or subtracting it from a larger string. There are a few varieties - for example, there might be a word that has been added to a string to create a new, unrelated word. As a simple example, if you add an 'inner ear' (i.e., the substring EAR) to the word FIRM, you can create FIREARM, and if you add a 'spare part' (i.e., PART) to the word WARY, you can create WARPARTY. 
