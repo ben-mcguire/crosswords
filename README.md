@@ -22,4 +22,6 @@ Sometimes you'll notice these coincidences in the wild and can just collect them
 The code here uses a quick substitution script to grab your chosen substring and check for valid combinations, then spits out a clean file that lets you quickly comb through and pick your favorites. In case your theme has particular parameters like 'starting' or 'finishing' or 'middle', the code also lets you pass in a stipulation about where the substring should be located.
 
 ### The Caesar Cipher
+A [Caesar Cipher](https://en.wikipedia.org/wiki/Caesar_cipher) is an old device that (aprocryphally, iirc) is attributed to Julius Caesar for encrypting and sending messages during wartime. The concept is very simple - a message is 'ciphered' by just rolling forward each letter through the alphabet so that it is indistinguishable as the original message without that number to roll it back. 
 
+This is a bit niche to try to pull off in a crossword but I think it's a fun example of what you can do with some quick and dirty R code and a somehwat complex theme. As an example, ROBYN and HEROD are both Caesar Ciphers of EBOLA (+3 and +13, respectively) - and using this code surfaces those as options for your 'message' encryption. It runs a bit slow locally so I added a progress bar.
