@@ -6,6 +6,7 @@ If you do crosswords a lot, you can start to get a feel for how themes are const
 - I use the free [Crosserville](https://www.crosserville.com/) but there are tons of good free (and/or pretty cheap) options
 - For a word list, [Peter Broda's free version](https://peterbroda.me/crosswords/wordlist/) is pretty big (500K usable words) is a good starter
 - I use [One Look](onelook.com) very frequently to think about how to incorporate clues and concepts, even when I've decided on a theme - really fast way to vet common words and phrases that might fit into your concept
+- R and R Studio are free to download and use, and the only real limitation here will be your local storage and processing power
 
 ## Code in this Repo
 
