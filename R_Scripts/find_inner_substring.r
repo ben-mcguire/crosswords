@@ -11,9 +11,5 @@ find_inner_substring <- function(words_vector, substring) {
   return(result)
 }
 
-matches <- find_inner_substring(words$word, "FIGURE")
-print(matches)
-
-# Example usage
-matches <- find_inner_substring(words, "FIGURE")
+matches <- find_inner_substring(words$word, "POLLAG")
 print(matches)
