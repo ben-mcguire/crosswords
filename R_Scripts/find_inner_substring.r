@@ -11,5 +11,5 @@ find_inner_substring <- function(words_vector, substring) {
   return(result)
 }
 
-matches <- find_inner_substring(words$word, "POLLAG")
+matches <- find_inner_substring(words$word, "GOJ")
 print(matches)
