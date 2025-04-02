@@ -9,7 +9,9 @@ If you do crosswords a lot, you can start to get a feel for how themes are const
 
 ## Code in this Repo
 
-### Substring in A String
+### Find this Substring in A String
+
+### Adding / Subtracting a Substring in A String
 A widely-used theme family is taking a substring and adding it to or subtracting it from a larger string. There are a few varieties - for example, there might be a word that has been added to a string to create a new, unrelated word. As a simple example, if you add an 'inner ear' (i.e., the substring EAR) to the word FIRM, you can create FIREARM, and if you add a 'spare part' (i.e., PART) to the word WARY, you can create WARPARTY. 
 
 Sometimes you'll notice these coincidences in the wild and can just collect them, but doing it that way (or searching through entries in an online dictionary like [OneLook](onelook.com) can take a while. 
