@@ -18,8 +18,9 @@ position <- "middle"
 find_valid_words <- function(words, target_string, position) {
   results <- data.frame(
     Original_Word = character(),
-    Word_Removed  = character(),
-    Length        = integer(),
+    Word_Removed = character(),
+    Length = integer(),
+    New_Length = integer(),
     stringsAsFactors = FALSE
   )
   
@@ -40,8 +41,9 @@ find_valid_words <- function(words, target_string, position) {
       if (modified_word %in% words) {
         results <- rbind(results, data.frame(
           Original_Word = word,
-          Word_Removed  = modified_word,
-          Length        = nchar(word),
+          Word_Removed = modified_word,
+          Length = nchar(word),
+          New_Length = nchar(modified_word),
           stringsAsFactors = FALSE
         ))
       }
