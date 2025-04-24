@@ -16,6 +16,7 @@ anagrammer <- function(file_path, target_string, position = "anywhere") {
   target_string <- toupper(target_string)
   target_anagrams <- unique(permn(strsplit(target_string, "")[[1]]) %>%
                               sapply(paste0, collapse = ""))
+  target_anagrams <- setdiff(target_anagrams, target_string)
   
   # progress bar
   pb <- progress_bar$new(
