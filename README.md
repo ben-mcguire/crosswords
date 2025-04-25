@@ -1,6 +1,6 @@
 # Crossword Theme Construction in R
 
-If you do crosswords a lot, you can start to get a feel for how themes are constructed and puzzles are designed, and you might get the itch to try one yourself. Usually, you can figure out a whole theme just with some creative thinking and time - you'll think of a pun, add another few examples, and be able to dive right into construction in an app. But other times, you might not be able to find enough examples, or just have the bones of a concept but not enough fill to get going. In these cases, some simple R code can help you drive toward a stable of theme answers fast, and the code in this repo is designed as a starter kit to do just that.
+If you do crosswords a lot, you can start to get a feel for how themes are constructed and puzzles are designed, and you might get the itch to try making one yourself. Usually, you can figure out a whole theme just with some creative thinking and time - you'll think of a pun, add another few examples, and be able to dive right into construction in an app. But other times, you might not be able to find enough examples, or just have the bones of a concept but not enough fill to get going. In these cases, some simple R code can help you drive toward a stable of theme answers fast, and the code in this repo is designed as a starter kit to do just that.
 
 ### Sources and Tools
 - I use the free [Crosserville](https://www.crosserville.com/) but there are tons of good free (and/or pretty cheap) options
