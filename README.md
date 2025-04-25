@@ -13,16 +13,21 @@ If you do crosswords a lot, you can start to get a feel for how themes are const
 ### Find Inner Substring in A String
 One of the simplest themes that might benefit from some coding scale is finding a word or phrase hidden inside another word or phrase. The best versions of these are usually the unexpected ones - when the end of one word plus the start of the next word in a phrase creates an unexpected and unrelated word. 
 
-As a silly example, a puzzle themed on REVERSE MOTION might benefit from finding the word JOG spelled backwards in MANGO JUICE - but finding those can be a slow process. This is a very simple R script that finds all of the internal matches fast and returns a list you can scan to find the gems. 
+As a silly example, a puzzle themed on REVERSE MOTION might benefit from finding the word JOG spelled backwards in MANGO JUICE - but finding those can be a slow process. This is a very simple R script that finds all of the internal matches fast and returns a list you can scan to find the gems. Link to the code is [here](https://github.com/ben-mcguire/crosswords/blob/main/R_Scripts/find_inner_substring.r).
 
 ### Adding / Subtracting a Substring in A String
 A widely-used theme family is taking a substring and adding it to or subtracting it from a larger string. There are a few varieties - for example, there might be a word that has been added to a string to create a new, unrelated word. As a simple example, if you add an 'inner ear' (i.e., the substring EAR) to the word FIRM, you can create FIREARM, and if you add a 'spare part' (i.e., PART) to the word WARY, you can create WARPARTY. 
 
 Sometimes you'll notice these coincidences in the wild and can just collect them, but doing it that way (or searching through entries in an online dictionary like [OneLook](onelook.com) can take a while. 
 
-The code here uses a quick substitution script to grab your chosen substring and check for valid combinations, then spits out a clean file that lets you quickly comb through and pick your favorites. In case your theme has particular parameters like 'starting' or 'finishing' or 'middle', the code also lets you pass in a stipulation about where the substring should be located.
+The code here uses a quick substitution script to grab your chosen substring and check for valid combinations, then spits out a clean file that lets you quickly comb through and pick your favorites. In case your theme has particular parameters like 'starting' or 'finishing' or 'middle', the code also lets you pass in a stipulation about where the substring should be located. Link to the code is [here](https://github.com/ben-mcguire/crosswords/blob/main/R_Scripts/string_in_a_string.r).
 
 ### The Caesar Cipher
 A [Caesar Cipher](https://en.wikipedia.org/wiki/Caesar_cipher) is an old device that (aprocryphally, iirc) is attributed to Julius Caesar for encrypting and sending messages during wartime. The concept is very simple - a message is 'ciphered' by just rolling forward each letter through the alphabet so that it is indistinguishable as the original message without that number to roll it back. 
 
-This is a bit niche to try to pull off in a crossword but I think it's a fun example of what you can do with some quick and dirty R code and a somehwat complex theme. As an example, HEROD and ROBYN are both Caesar Ciphers of EBOLA (+3 and +13, respectively) - and using this code surfaces those as options for your 'message' encryption. It runs a bit slow locally so I added a progress bar.
+This is a bit niche to try to pull off in a crossword but I think it's a fun example of what you can do with some quick and dirty R code and a somehwat complex theme. As an example, HEROD and ROBYN are both Caesar Ciphers of EBOLA (+3 and +13, respectively) - and using this code surfaces those as options for your 'message' encryption. It runs a bit slow locally so I added a progress bar. Link to the code is [here](https://github.com/ben-mcguire/crosswords/blob/main/R_Scripts/caesar_cipher.r).
+
+### Anagrammer
+Anagrams are a popular theme because they can produce nice 'Aha!' moments for solvers - so if you were putting together a theme around MIXED DRINK, it might take a very long time to realize that PETE(R DINK)LAGE contains a nested anagram of DRINK. This code assembles a list of anagrams of a given term, checks whether they exist in other words in a set of user-defined positions, and then spits out a clean list with the anagram, the word where it appears, and the length of the word.
+
+Link to the code is [here](https://github.com/ben-mcguire/crosswords/blob/main/R_Scripts/anagrammer.r).
