@@ -31,3 +31,9 @@ This is a bit niche to try to pull off in a crossword but I think it's a fun exa
 Anagrams are a popular theme because they can produce nice 'Aha!' moments for solvers - so if you were putting together a theme around MIXED DRINK, it might take a very long time to realize that PETE(R DINK)LAGE contains a nested anagram of DRINK. This code assembles a list of anagrams of a given term, checks whether they exist in other words in a set of user-defined positions, and then spits out a clean list with the anagram, the word where it appears, and the length of the word.
 
 Link to the code is [here](https://github.com/ben-mcguire/crosswords/blob/main/R_Scripts/anagrammer.r).
+
+### Pattern Finder
+
+Sometimes while you're thinking about a pun or clue concept, you might identify an interesting letter pattern and wonder if that pattern appears in other words. (For what it's worth, this kind of pattern checking is what crossword grid builders do, at scale) This code accepts a simple pattern shape (e.g., 'B*N') where the asterisk acts as a wild card, and returns a list of all the places where that exact pattern shows up.
+
+Link to the code is [here](https://github.com/ben-mcguire/crosswords/blob/main/R_Scripts/pattern_finding.r).
