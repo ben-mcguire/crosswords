@@ -5,7 +5,7 @@ library(dplyr)
 library(progress)
 
 # Data import
-words <- read.csv("~/Desktop/xwordlist.csv", sep="")
+words <- read.csv("~/your_wordlist.csv", sep="")
 words$word <- tolower(trimws(words$word))
 
 # Caesar cipher
