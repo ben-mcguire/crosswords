@@ -37,3 +37,9 @@ Link to the code is [here](https://github.com/ben-mcguire/crosswords/blob/main/R
 Sometimes while you're thinking about a pun or clue concept, you might identify an interesting letter pattern and wonder if that pattern appears in other words. (For what it's worth, this kind of pattern checking is what crossword grid builders do, at scale) This code accepts a simple pattern shape (e.g., 'B*N') where the asterisk acts as a wild card, and returns a list of all the places where that exact pattern shows up.
 
 Link to the code is [here](https://github.com/ben-mcguire/crosswords/blob/main/R_Scripts/pattern_finding.r).
+
+### Switcher
+
+Switching one thing for another is a popular theme set, but doing the substitutions manually can be a chore. For example, you might notice that switching KING for ACE turns PEACE into PEKING - useful for a TRADING CARD theme - but what about all the ways JACK and ACE and KING and TEN mix and match? This code takes a set of ordered pairs and sequences through to find all the valid switch combinations. The code shows a silly example based on the concept of switching political parties (where REP-ented becomes DEM-ented or IND-ented).
+
+Link to the code is [here](https://github.com/ben-mcguire/crosswords/blob/main/R_Scripts/switcher.r).
