@@ -7,9 +7,13 @@ words <- word_list$word
 
 find_inner_substring <- function(words_vector, substring) {
   pattern <- paste0("(?<!^)", substring, "(?!$)")
-  result <- grep(pattern, words_vector, perl = TRUE, value = TRUE)
-  return(result)
+  matched_words <- grep(pattern, words_vector, perl = TRUE, value = TRUE)
+  result_df <- data.frame(
+    word = matched_words,
+    length = nchar(matched_words),
+    stringsAsFactors = FALSE
+  )
 }
 
-matches <- find_inner_substring(words$word, "GOJ")
-print(matches)
+found_patterns <- find_inner_substring(words, "EMID")
+View(found_patterns)
