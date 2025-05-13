@@ -3,7 +3,7 @@ library(dplyr)
 library(stringr)
 library(progress)
 
-words_df <- read_csv("~/Desktop/xwordlist.csv", col_types = cols(word = col_character()))
+words_df <- read_csv("your_filepath.csv", col_types = cols(word = col_character()))
 word_list <- as.character(words_df$word)
 word_list <- word_list[!is.na(word_list)]
 
