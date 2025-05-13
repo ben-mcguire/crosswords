@@ -5,9 +5,9 @@ library(dplyr)
 
 words <- word_list$word
 
-find_inner_substring <- function(words_vector, substring) {
+find_inner_substring <- function(words, substring) {
   pattern <- paste0("(?<!^)", substring, "(?!$)")
-  matched_words <- grep(pattern, words_vector, perl = TRUE, value = TRUE)
+  matched_words <- grep(pattern, words, perl = TRUE, value = TRUE)
   result_df <- data.frame(
     word = matched_words,
     length = nchar(matched_words),
